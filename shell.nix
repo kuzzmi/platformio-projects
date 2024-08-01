@@ -7,5 +7,5 @@ pkgs.mkShell {
     pkgs.dfu-util
   ];
 
-  PLATFORMIO_CORE_DIR = "./.pio";
+  PLATFORMIO_CORE_DIR = "${builtins.toString ./.}/.pio";
 }
